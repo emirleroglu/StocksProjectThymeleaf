@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+
+        <th scope="col">Ad</th>
+        <th scope="col">Kod</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="hisse:${x}">
+        <td th:text="${hisse.ad}"></td>
+        <td th:text="${hisse.kod}"></td>
+
+    </tr>
+    </tbody>
+
+
+</table>
+
+
+
+
+</body>
+</html>
